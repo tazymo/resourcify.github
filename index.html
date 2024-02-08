@@ -8,48 +8,47 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: rgb(240, 240, 240); /* Light gray background */
-            display: flex;  
+            background: linear-gradient(to bottom right, #ADD8E6, #FFA07A); /* Gradient background with light blue and light red */
+            display: flex;
             flex-direction: column;
-            height: 100vh;
+            min-height: 100vh; /* Use min-height instead of height for better responsiveness */
         }
 
         header {
-            background-color: #8e3dae; /* Dark gray header */
+            background: linear-gradient(to bottom right, #ADD8E6, #FFA07A); /* Gradient background with light blue and light red */
             padding: 20px;
             text-align: center;
-            color: #fff;
+            color: white;
         }
 
         main {
-            background-image: url('your-background-image.jpg'); /* Add the path to your background image */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
             padding: 20px;
             text-align: center;
             flex: 1; /* Take remaining space */
-            color: #000000; /* Text color on top of the background */
-            background-color: rgba(255, 255, 255, 0.7); /* Transparent white background behind the table */
+            color: #000;
         }
 
         table {
             border-collapse: collapse;
             width: 100%;
+            margin-top: 20px;
+            border-radius: 10px; /* Add border-radius for a curvy table */
+            overflow: hidden; /* Hide overflowing content */
+            border: none; /* Remove border */
         }
 
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 12px;
             text-align: center;
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: #e6e6e6; /* Light gray header background */
         }
 
         a {
-            color: blue;
+            color: #007bff; /* Blue link color */
             text-decoration: none;
         }
 
@@ -65,29 +64,31 @@
     </header>
 
     <main>
-        <table>
-            <tr>
-                <th style="width: 50%;">URL</th>
-                <th style="width: 30%;">Details</th>
-                <th style="width: 20%;">Date</th>
-            </tr>
-            <!-- Add more rows as needed -->
-            <tr>
-                <td><a href="https://zorox.to/">https://zorox.to/</a></td>
-                <td>Anime watching site</td>
-                <td>2024-02-08</td>
-            </tr>
-            <tr>
-                <td><a href="https://hurawatch.bz/" target="_blank">https://hurawatch.bz/</a></td>
-                <td>Movie/TV show watching nigga site</td>
-                <td>2024-02-08</td>
-            </tr>
-            <tr>
-                <td><a href="https://chat.openai.com/" target="_blank">https://chat.openai.com/</a></td>
-                <td>Ai site</td>
-                <td>2024-02-08</td>
-            </tr>
-        </table>
+        <div style="border: 1px solid #ddd; border-radius: 10px; padding: 10px; overflow: auto;">
+            <table>
+                <tr>
+                    <th style="width: 50%;">URL</th>
+                    <th style="width: 30%;">Details</th>
+                    <th style="width: 20%;">Date</th>
+                </tr>
+                <!-- Add more rows as needed -->
+                <tr>
+                    <td><a href="https://zorox.to/">https://zorox.to/</a></td>
+                    <td>Anime watching site</td>
+                    <td>2024-02-08</td>
+                </tr>
+                <tr>
+                    <td><a href="https://hurawatch.bz/" target="_blank">https://hurawatch.bz/</a></td>
+                    <td>Movie/TV show watching site</td>
+                    <td>2024-02-08</td>
+                </tr>
+                <tr>
+                    <td><a href="https://chat.openai.com/" target="_blank">https://chat.openai.com/</a></td>
+                    <td>AI site</td>
+                    <td>2024-02-08</td>
+                </tr>
+            </table>
+        </div>
     </main>
 
 </body>
